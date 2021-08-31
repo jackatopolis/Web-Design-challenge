@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      #box {
+        display: inline-block;
+        justify-content: center;
+        vertical-align: top;
+        margin-left:5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 25px; 
+        background-color:linen;
+        border-radius: 5px;
+        width:auto;
+        min-width: 500px;
+        position: relative;
+      }
+
+      #box-1 {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 5px; 
+        border-radius: 5px;
+        width: auto;
+        min-width: fit-content;
+        position: relative;
+      }
+
+      #header-1 {
+        display: block; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 25px;
+        padding: 15px; 
+        background-color:moccasin;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      #headers {
+        font-size:40px;
+      }
+
+      #default {
+        background-color: rgb(177, 191, 206);
+      }
+
+      #viz-text {
+        margin-top: 10px;
+      }
+
+      #summary_img {
+        float:left;
+        width: 40%;
+        margin-right: 15px;
+      }
+
+      @media (max-width: 800px) {
+
+        #box {
+          display:contents;
+          margin:0px;
+          margin-left: 0px;
+          padding: 15px; 
+          background-color:moccasin;
+          border-radius: 0px;
+        }
+
+        #box-1 {
+          display: flex;
+          margin:0px;
+          padding: 25px; 
+          border-radius: 0px;
+          width:100%;
+      }
+
+        #default {
+          margin: 0px;
+          background-color: linen;
+        }
+      }
+
+    </style>
+
+</head>
+<body id="default">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" id="header-1" href="#">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Max Temperature</a>
+                <a class="dropdown-item" href="#">Cloudiness</a>
+                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="#">Windspeed</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Comparison</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row" id="box-1">
+        <div class="col" id="box">
+          <div>
+            <h1 class="display-4" id="headers">Summary: Latitude vs. X</h1>
+            <hr class="my-4">
+            <div class="container">
+              <img id="summary_img" src="Resources/assets/images/Fig1.png" alt="Figure 1" class="img-thumbnail">
+              <p>This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...</p>
+              <p>This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="box">
+          <div>
+            <h1 class="display-4" id="headers">Visualizations</h1>
+            <hr class="my-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <img src="Resources/assets/images/Fig1.png" alt="Figure 1" class="img-thumbnail">
+                </div>
+                <div class="col-6 col-md-3">
+                  <img src="Resources/assets/images/Fig2.png" alt="Figure 1" class="img-thumbnail">
+                </div>
+                <div class="col-6 col-md-3">
+                  <img src="Resources/assets/images/Fig3.png" alt="Figure 1" class="img-thumbnail">
+                </div>
+                <div class="col-6 col-md-3">
+                  <img src="Resources/assets/images/Fig4.png" alt="Figure 1" class="img-thumbnail">
+                </div>
+              </div>
+            </div>
+            <div class="container" id="viz-text">
+              <p>This is where the visualizations go...This is where the visualizations go...This is where the visualizations go...This is where the visualizations go...This is where the visualizations go...</p>
+              <p>This is where the visualizations go...This is where the visualizations go...This is where the visualizations go...This is where the visualizations go...This is where the visualizations go...</p>
+            </div>          
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
