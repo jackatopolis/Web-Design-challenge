@@ -2,9 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Landing</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    .main-frame {
+        display: grid;
+        grid-template-columns: minmax(0,1fr) 350px;
+        grid-column-gap: 12px;
+        grid-auto-rows: max-content;
+        max-width: 1162px;
+        z-index: 100;
+        margin-top: 12px !important;
+        margin-right: auto !important;
+        margin-bottom: 12px !important;
+        margin-left: auto !important;
+    }
+
+      #box {
+        vertical-align: top;
+        padding: 25px; 
+        background-color:linen;
+        width: auto;
+        border-radius: 5px;
+        grid-auto-rows: max-content;
+      }
+
+      #box-left {
+        float: left;
+        justify-content: center;
+        vertical-align: top;
+        margin-left:5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 25px; 
+        background-color:linen;
+        border-radius: 5px;
+        min-width: 500px;
+        position: relative;
+      }
+
+      #box-right {
+        vertical-align: top;
+        padding: 25px; 
+        background-color:linen;
+        width: auto;
+        height: max-content;
+        border-radius: 5px;
+        grid-auto-rows: max-content;
+      }
+
+      #box-1 {
+        display: grid;
+        grid-template-columns: minmax(0,1fr) 350px;
+        grid-column-gap: 12px;
+        justify-content:center;
+        margin-top: 30px;
+        padding: 5px; 
+        border-radius: 5px;
+      }
+
+      #box-2 {
+        display: inline-block;
+        margin:0px;
+        padding: 25px; 
+        border-radius: 0px;
+        width:100%;
+      }
+
+      #header-1 {
+        display: block; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 25px;
+        padding: 15px; 
+        background-color:moccasin;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      #headers {
+        font-size:40px;
+      }
+
+      #default {
+        background-color: rgb(177, 191, 206);
+      }
+
+      #viz-text {
+        margin-top: 10px;
+      }
+
+      #summary_img {
+        float:left;
+        width: 40%;
+        margin-right: 15px;
+      }
+
+      #main_img {
+          width: max-content;
+          margin-bottom: 20px;
+      }
+
+      @media (max-width: 800px) {
+
+        .main-frame {
+          display: inline-block;
+          margin-top: 12px !important;
+          margin-right: 0 !important;
+          margin-bottom: 12px !important;
+          margin-left: 0 !important;
+        }
+
+        #box {
+          display:contents;
+          margin:0px;
+          margin-left: 0px;
+          padding: 15px; 
+          background-color:moccasin;
+          border-radius: 0px;
+        }
+
+        #box-1 {
+          display: flex;
+          margin:0px;
+          padding: 25px; 
+          border-radius: 0px;
+          width:100%;
+        }
+
+        #default {
+          margin: 0px;
+          background-color: linen;
+        }
+
+        #headers {
+          font-size:30px;
+          text-align: center;
+        }
+      }
+
+    </style>
 </head>
 
 <body id="default">
@@ -49,10 +190,10 @@
     <div class="container">
       <div class="main-frame">
           <div id="box">
-            <h1 class="display-4" id="headers">Summary: Latitude vs. X</h1>
+            <h1 class="display-4" id="headers">Max Temperature</h1>
             <hr class="my-4">
             <div class="container">
-              <img src="Resources/assets/images/Fig1.png" id="summary_img" alt="Max Temperature" class="img-thumbnail">
+              <img src="Resources/assets/images/Fig1.png" id="main_img" alt="Max Temperature" class="img-thumbnail">
               <p>This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...</p>
               <p>This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...This is where the summary goes...</p>
             </div>
@@ -63,16 +204,16 @@
             <div class="container">
               <div class="row">
                 <div class="col-6">
-                  <a href="#"><img src="Resources/assets/images/Fig1.png" alt="Max Temperature" class="img-thumbnail"></a>
+                  <img src="Resources/assets/images/Fig1.png" alt="Figure 1" class="img-thumbnail">
                 </div>
                 <div class="col-6">
-                  <a href="#"><img src="Resources/assets/images/Fig2.png" alt="Humidity" class="img-thumbnail"></a>
+                  <img src="Resources/assets/images/Fig2.png" alt="Figure 1" class="img-thumbnail">
                 </div>
                 <div class="col-6">
-                  <a href="#"><img src="Resources/assets/images/Fig3.png" alt="Cloudiness" class="img-thumbnail"></a>
+                  <img src="Resources/assets/images/Fig3.png" alt="Figure 1" class="img-thumbnail">
                 </div>
                 <div class="col-6">
-                  <a href="#"><img src="Resources/assets/images/Fig4.png" alt="Wind Speed" class="img-thumbnail"></a>
+                  <img src="Resources/assets/images/Fig4.png" alt="Figure 1" class="img-thumbnail">
                 </div>
               </div>
             </div>      
