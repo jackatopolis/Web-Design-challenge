@@ -5,176 +5,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-
-    .main-frame {
-        display: grid;
-        grid-template-columns: minmax(0,1fr) 350px;
-        grid-column-gap: 12px;
-        grid-auto-rows: max-content;
-        max-width: 1162px;
-        z-index: 100;
-        margin-top: 12px !important;
-        margin-right: auto !important;
-        margin-bottom: 12px !important;
-        margin-left: auto !important;
-    }
-
-      #box {
-        vertical-align: top;
-        padding: 25px; 
-        background-color:linen;
-        width: auto;
-        border-radius: 5px;
-        grid-auto-rows: max-content;
-      }
-
-      #box-left {
-        float: left;
-        justify-content: center;
-        vertical-align: top;
-        margin-left:5px;
-        margin-right: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 25px; 
-        background-color:linen;
-        border-radius: 5px;
-        min-width: 500px;
-        position: relative;
-      }
-
-      #box-right {
-        vertical-align: top;
-        padding: 25px; 
-        background-color:linen;
-        width: auto;
-        height: max-content;
-        border-radius: 5px;
-        grid-auto-rows: max-content;
-      }
-
-      #box-1 {
-        display: grid;
-        grid-template-columns: minmax(0,1fr) 350px;
-        grid-column-gap: 12px;
-        justify-content:center;
-        margin-top: 30px;
-        padding: 5px; 
-        border-radius: 5px;
-      }
-
-      #box-2 {
-        display: inline-block;
-        margin:0px;
-        padding: 25px; 
-        border-radius: 0px;
-        width:100%;
-      }
-
-      #header-1 {
-        display: block; 
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 25px;
-        padding: 15px; 
-        background-color:moccasin;
-        border-radius: 5px;
-        position: relative;
-      }
-
-      #headers {
-        font-size:40px;
-      }
-
-      #default {
-        background-color: rgb(177, 191, 206);
-      }
-
-      #viz-text {
-        margin-top: 10px;
-      }
-
-      #summary_img {
-        float:left;
-        width: 40%;
-        margin-right: 15px;
-      }
-
-      #main_img {
-          width: max-content;
-          margin-bottom: 20px;
-      }
-
-      @media (max-width: 800px) {
-
-        .main-frame {
-          display: inline-block;
-          margin-top: 12px !important;
-          margin-right: 0 !important;
-          margin-bottom: 12px !important;
-          margin-left: 0 !important;
-        }
-
-        #box {
-          display:contents;
-          margin:0px;
-          margin-left: 0px;
-          padding: 15px; 
-          background-color:moccasin;
-          border-radius: 0px;
-        }
-
-        #box-1 {
-          display: flex;
-          margin:0px;
-          padding: 25px; 
-          border-radius: 0px;
-          width:100%;
-        }
-
-        #default {
-          margin: 0px;
-          background-color: linen;
-        }
-
-        #headers {
-          font-size:30px;
-          text-align: center;
-        }
-      }
-
-    </style>
 </head>
 
 <body id="default">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" id="header-1" href="#">Latitude</a>
+        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Max Temperature</a>
-                <a class="dropdown-item" href="#">Cloudiness</a>
-                <a class="dropdown-item" href="#">Humidity</a>
-                <a class="dropdown-item" href="#">Windspeed</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Comparison</a>
-              </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
@@ -184,7 +42,7 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-    </nav>
+      </nav>
 
 
     <div class="container">
