@@ -131,7 +131,7 @@
   }
 
 
-  @media (max-width: 800px) {
+  @media screen and (max-width: 770px) {
 
     .main-frame {
       display: inline-block;
